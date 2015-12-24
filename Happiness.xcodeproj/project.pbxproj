@@ -100,13 +100,10 @@
 		185F455A1C2BBBAD00BAD6B3 /* Happiness */ = {
 			isa = PBXGroup;
 			children = (
-				185F458C1C2BBC0400BAD6B3 /* AppDelegate.swift */,
-				185F458D1C2BBC0400BAD6B3 /* Assets.xcassets */,
 				185F45931C2BBC0400BAD6B3 /* FaceView.swift */,
 				185F459B1C2BBC3100BAD6B3 /* HappinessViewController.swift */,
-				185F45941C2BBC0400BAD6B3 /* Info.plist */,
-				185F458F1C2BBC0400BAD6B3 /* LaunchScreen.storyboard */,
 				185F45911C2BBC0400BAD6B3 /* Main.storyboard */,
+				185F459D1C2BBFA300BAD6B3 /* Supporting files */,
 			);
 			path = Happiness;
 			sourceTree = "<group>";
@@ -127,6 +124,17 @@
 				185F457D1C2BBBAD00BAD6B3 /* Info.plist */,
 			);
 			path = HappinessUITests;
+			sourceTree = "<group>";
+		};
+		185F459D1C2BBFA300BAD6B3 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				185F458F1C2BBC0400BAD6B3 /* LaunchScreen.storyboard */,
+				185F45941C2BBC0400BAD6B3 /* Info.plist */,
+				185F458C1C2BBC0400BAD6B3 /* AppDelegate.swift */,
+				185F458D1C2BBC0400BAD6B3 /* Assets.xcassets */,
+			);
+			name = "Supporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
