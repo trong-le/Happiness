@@ -13,7 +13,8 @@ protocol FaceViewDataSource: class {
 }
 
 @IBDesignable
-class FaceView: UIView {
+class FaceView: UIView
+{
 
     // @IBInspectable overwrites code when changed in inspector
     /* didSet automatically redraws when lineWidth is changed
@@ -92,6 +93,16 @@ class FaceView: UIView {
     }
     
     weak var dataSource: FaceViewDataSource?
+    
+    
+    // Gesture recognizer for pinch. Resets scale back to 1 depending on pinch scale
+    func scale(gesture: UIPinchGestureRecognizer) {
+        if gesture.state == .Changed {
+            scale *= gesture.scale
+            gesture.scale = 1
+        }
+        
+    }
     
     override func drawRect(rect: CGRect) {
          let facePath = UIBezierPath(arcCenter: faceCenter, radius: faceRadius, startAngle: 0, endAngle: CGFloat(2*M_PI), clockwise: true)
